@@ -58,12 +58,13 @@ public class Sketch : MonoBehaviour
             float x = 1.8f + sin * totalDistance;
             float y = 1.0f;
             float z = -1.0f;
+            float YOffset = -1.0f;
 
-            var newCube = (GameObject)Instantiate(myPrefab, new Vector3(product.X, product.Y, product.Z), Quaternion.identity);
+            var newCube = (GameObject)Instantiate(myPrefab, new Vector3(product.X, product.Y + YOffset, product.Z), Quaternion.identity);
 
             //newCube.GetComponent<CubeScript>().SetSize(.45f * (1.0f - perc));
             //newCube.GetComponent<CubeScript>().rotateSpeed = .2f + perc * 4.0f;
-            newCube.transform.Find("New Text").GetComponent<TextMesh>().text = product.Name;//"Hullo Again";
+            newCube.transform.Find("New Text").GetComponent<TextMesh>().text = product.Name + " " + product.Size;//"Hullo Again";
             i++;
 
             //----------------------
