@@ -61,6 +61,7 @@ public class Sketch : MonoBehaviour
             float YOffset = -1.0f;
 
             var newCube = (GameObject)Instantiate(myPrefab, new Vector3(product.X, product.Y + YOffset, product.Z), Quaternion.identity);
+            
 
             //newCube.GetComponent<CubeScript>().SetSize(.45f * (1.0f - perc));
             //newCube.GetComponent<CubeScript>().rotateSpeed = .2f + perc * 4.0f;
