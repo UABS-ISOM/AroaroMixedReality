@@ -6,7 +6,7 @@
     /// <summary>
     /// Defines the <see cref="ViewLoader" />
     /// </summary>
-    public class ViewLoader : MonoBehaviour
+    public class BaseSceneLoader : MonoBehaviour
     {
         /// <summary>
         /// Defines the BaseScene
