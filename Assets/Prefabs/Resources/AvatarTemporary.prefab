@@ -63,7 +63,7 @@ MonoBehaviour:
   ObservedComponentsFoldoutOpen: 1
   Group: 0
   prefixField: -1
-  Synchronization: 1
+  Synchronization: 0
   OwnershipTransfer: 0
   ObservedComponents:
   - {fileID: 6942227851286277842}

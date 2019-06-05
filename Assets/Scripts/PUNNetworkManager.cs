@@ -47,7 +47,7 @@
         {
             Debug.Log("Joined room success");
             Color randomColor = Random.ColorHSV();
-            PhotonNetwork.Instantiate(avatar.name, new Vector3(0f, 0f, 0f), Quaternion.identity, 0, new object[] { randomColor.r, randomColor.g, randomColor.b, randomColor.a });
+            ///PhotonNetwork.Instantiate(avatar.name, new Vector3(0f, 0f, 0f), Quaternion.identity, 0, new object[] { randomColor.r, randomColor.g, randomColor.b, randomColor.a });
         }
 
         /// <summary>
