@@ -13,7 +13,7 @@
         /// <summary>
         /// Defines the gameVersion
         /// </summary>
-        private string gameVersion = "1.0";
+        private string gameVersion = "2.0";
 
         /// <summary>
         /// Defines the avatar
