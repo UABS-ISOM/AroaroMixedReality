@@ -19,6 +19,9 @@
         /// Defines the avatar
         /// </summary>
         public GameObject avatar;
+        public GameObject cameraToFollow;
+
+   
 
         /// <summary>
         /// The OnConnectedToMaster
@@ -47,7 +50,8 @@
         {
             Debug.Log("Joined room success");
             Color randomColor = Random.ColorHSV();
-            ///PhotonNetwork.Instantiate(avatar.name, new Vector3(0f, 0f, 0f), Quaternion.identity, 0, new object[] { randomColor.r, randomColor.g, randomColor.b, randomColor.a });
+            GameObject player = PhotonNetwork.Instantiate(avatar.name, new Vector3(0f, 0f, 0f), Quaternion.identity, 0, new object[] { randomColor.r, randomColor.g, randomColor.b, randomColor.a });
+            player.GetComponent<AttachPlayerModelScript>().playerCameraToFollow = cameraToFollow;
         }
 
         /// <summary>
