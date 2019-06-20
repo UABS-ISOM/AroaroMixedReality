@@ -1,0 +1,176 @@
+fileFormatVersion: 2
+guid: 7f3aa3854bcde4755a9c621b4b06882f
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: maker_tip
+    100004: maker_tip_001
+    100006: marker_black
+    100008: marker_blue
+    100010: marker_body
+    100012: marker_cap
+    100014: marker_cyan
+    100016: marker_end
+    100018: marker_green
+    100020: marker_magenta
+    100022: marker_orange
+    100024: marker_red
+    100026: marker_yellow
+    100028: Plane
+    400000: //RootNode
+    400002: maker_tip
+    400004: maker_tip_001
+    400006: marker_black
+    400008: marker_blue
+    400010: marker_body
+    400012: marker_cap
+    400014: marker_cyan
+    400016: marker_end
+    400018: marker_green
+    400020: marker_magenta
+    400022: marker_orange
+    400024: marker_red
+    400026: marker_yellow
+    400028: Plane
+    2100000: plast_svart2
+    2100002: plast_svart
+    2100004: plast_gul
+    2100006: plast_orange
+    2100008: plast_r_d
+    2100010: plast_lila
+    2100012: plast_bl_
+    2100014: plast_cyan
+    2100016: plast_gr_n
+    2100018: marker_tip
+    2100020: unnamed
+    2300000: maker_tip
+    2300002: maker_tip_001
+    2300004: marker_black
+    2300006: marker_blue
+    2300008: marker_body
+    2300010: marker_cap
+    2300012: marker_cyan
+    2300014: marker_end
+    2300016: marker_green
+    2300018: marker_magenta
+    2300020: marker_orange
+    2300022: marker_red
+    2300024: marker_yellow
+    2300026: Plane
+    3300000: maker_tip
+    3300002: maker_tip_001
+    3300004: marker_black
+    3300006: marker_blue
+    3300008: marker_body
+    3300010: marker_cap
+    3300012: marker_cyan
+    3300014: marker_end
+    3300016: marker_green
+    3300018: marker_magenta
+    3300020: marker_orange
+    3300022: marker_red
+    3300024: marker_yellow
+    3300026: Plane
+    4300000: marker_cyan
+    4300002: marker_orange
+    4300004: marker_yellow
+    4300006: marker_magenta
+    4300008: marker_black
+    4300010: marker_blue
+    4300012: marker_green
+    4300014: marker_red
+    4300016: maker_tip_001
+    4300018: Plane
+    4300020: marker_body
+    4300022: marker_end
+    4300024: marker_cap
+    4300026: maker_tip
+    7400000: Default Take
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
