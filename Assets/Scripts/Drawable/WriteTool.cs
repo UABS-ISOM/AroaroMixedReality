@@ -107,6 +107,7 @@
             {
                 if (previousTouchingCanvas != null)
                 {
+                    Debug.Log("previous Touchign Canvas");
                     PhotonView.Get(previousTouchingCanvas).RPC(nameof(previousTouchingCanvas.EndStroke), RpcTarget.AllBufferedViaServer, gameObject.GetInstanceID());
                     previousTouchingCanvas = null;
                 }
