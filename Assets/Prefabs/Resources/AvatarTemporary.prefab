@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerCameraToFollow: {fileID: 0}
-  playerHead: {fileID: 6942227851286277843}
+  playerHead: {fileID: 6942227851839643858}
   playerLeftHand: {fileID: 0}
   playerRightHand: {fileID: 0}
 --- !u!1 &6942227851839643858
@@ -162,7 +162,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: b0206bc331893e84f8eae3be4993ad97, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
