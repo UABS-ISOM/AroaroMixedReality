@@ -1,4 +1,4 @@
-﻿namespace Aroaro
+﻿namespace AroaroMixedReality
 {
     using Photon.Pun;
     using System.Collections.Generic;

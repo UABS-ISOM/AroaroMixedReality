@@ -1,5 +1,6 @@
-﻿namespace Aroaro
+﻿namespace AroaroMixedReality
 {
+    using System;
     using Microsoft.MixedReality.Toolkit.UI; //using this to replace VRTK components
     using Photon.Pun;
     using UnityEngine;
@@ -148,7 +149,7 @@
         /// The Update
         /// </summary>
         
-        /*
+        
         protected override void Update()
         {
             base.Update();
@@ -180,6 +181,9 @@
             }
         }
 
-    */
+        private bool IsUsing()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
