@@ -1,4 +1,5 @@
-﻿namespace AroaroMixedReality
+﻿/*
+ namespace AroaroMixedReality
 {
     using System.Collections;
     using System.Collections.Generic;
@@ -30,15 +31,16 @@
         }
 
         // Start is called before the first frame update
-        void onEnable()
+        void OnEnable()
         {
             PhotonNetwork.AddCallbackTarget(this);
         }
 
         // Update is called once per frame
-        void onDisable()
+        void OnDisable()
         {
             PhotonNetwork.RemoveCallbackTarget(this);
         }
     }
 }
+*/
