@@ -9,7 +9,7 @@
     public class NetworkControllableObject : MonoBehaviour
     {
         private PhotonView photonView;
-
+        public bool isControllable;
 
         public void DestroyObject()
         {
@@ -45,6 +45,7 @@
                 
         }
 
+        
         private void Awake()
         {
             photonView = gameObject.GetComponent<PhotonView>();

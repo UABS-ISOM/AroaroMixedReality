@@ -102,6 +102,7 @@
             }
             texture = new Texture2D(textureWidth, textureHeight);
             GetComponent<Renderer>().material.mainTexture = (Texture)texture;
+            texture.Apply();
         }
 
         /// <summary>
