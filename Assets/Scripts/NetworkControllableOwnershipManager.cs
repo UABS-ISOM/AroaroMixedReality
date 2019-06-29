@@ -30,13 +30,13 @@
         }
 
         // Start is called before the first frame update
-        void Start()
+        void onEnable()
         {
             PhotonNetwork.AddCallbackTarget(this);
         }
 
         // Update is called once per frame
-        void Update()
+        void onDisable()
         {
             PhotonNetwork.RemoveCallbackTarget(this);
         }
