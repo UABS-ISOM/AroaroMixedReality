@@ -5,7 +5,9 @@
     using System.Collections.Generic;
     using UnityEngine;
     using Photon.Pun;
-
+    using System;
+    
+    using Microsoft.MixedReality.Toolkit.Utilities.Solvers;
 
     public class WriteTool : MonoBehaviour
     {
@@ -20,7 +22,18 @@
         private Vector3 originalPosition;
         private Quaternion originalRotation;
         private Transform penTipTransform;
+        private ControllerFinder controllerLocator;
+        private bool isHeld;
 
+        public bool IsHeld
+        {
+            get { return isHeld; }
+            set
+            {
+                isHeld = value;
+
+            }
+        }
 
         // declare PenColor property accessors
         // note that the tip of the paint tool will reflect the current color chosen
@@ -66,13 +79,13 @@
         // Start is called before the first frame update
         void Start()
         {
-
+            isHeld = false;
         }
 
         // Update is called once per frame
         void Update()
         {
-            if (Physics.Raycast(penTipTransform.position, transform.up, out RaycastHit hit))
+            if (InUse() && Physics.Raycast(penTipTransform.position, transform.up, out RaycastHit hit))
             {
                 Drawable canvas = hit.collider.gameObject.GetComponent<Drawable>();
 
@@ -99,6 +112,26 @@
                 }
             }
         }
+
+
+        public void PenHeldManipulatedStart()
+        {
+            Debug.Log("penheld");
+            IsHeld = true;
+        }
+
+        public void PenDroppedManipulation()
+        {
+            IsHeld = false;
+            Debug.Log("pendroppped");
+        }
+
+        public bool InUse()
+        {
+            return IsHeld;
+        }
+
+
     }
 }
 

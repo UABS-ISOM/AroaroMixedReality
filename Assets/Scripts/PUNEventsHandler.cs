@@ -56,5 +56,7 @@
                 PhotonNetwork.InstantiateSceneObject(name, position, rotation);
             }
         }
+
+
     }
 }

@@ -59,6 +59,19 @@
         /// </summary>
         private Drawable previousTouchingCanvas;
 
+
+        private bool isHeld;
+
+        public bool IsHeld
+        {
+            get { return isHeld; }
+            set
+            {
+                isHeld = value;
+
+            }
+        }
+
         /// <summary>
         /// Gets or sets the PenColor
         /// </summary>
@@ -179,6 +192,16 @@
                     previousTouchingCanvas = null;
                 }
             }
+        }
+
+        public void PenHeldManipulatedStart()
+        {
+            IsHeld = true;
+        }
+
+        public void PenDroppedManipulation()
+        {
+            IsHeld = false;
         }
 
         private bool IsUsing()
