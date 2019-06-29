@@ -34,5 +34,6 @@ MonoBehaviour:
   - RespawnSpaceship
   - Draw
   - EndStroke
+  - DestroyNetworkedObject
   DisableAutoOpenWizard: 1
   ShowSettings: 1
