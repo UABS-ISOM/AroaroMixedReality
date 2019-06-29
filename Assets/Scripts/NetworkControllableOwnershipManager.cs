@@ -1,4 +1,4 @@
-﻿/*
+﻿
  namespace AroaroMixedReality
 {
     using System.Collections;
@@ -43,4 +43,4 @@
         }
     }
 }
-*/
+
