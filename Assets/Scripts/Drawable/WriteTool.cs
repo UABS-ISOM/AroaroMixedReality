@@ -22,7 +22,7 @@
         private Vector3 originalPosition;
         private Quaternion originalRotation;
         private Transform penTipTransform;
-        private ControllerFinder controllerLocator;
+        
         private bool isHeld;
 
         public bool IsHeld

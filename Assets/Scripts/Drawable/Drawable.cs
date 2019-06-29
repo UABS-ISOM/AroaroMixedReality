@@ -80,7 +80,7 @@
         /// <param name="collision">The collision<see cref="Collision"/></param>
         internal void OnCollisionExit(Collision collision)
         {
-            if (collision.gameObject.GetComponent<Pen>() != null) gameObject.GetComponent<PhotonView>().RPC("EndStroke", RpcTarget.AllBufferedViaServer, collision.gameObject.GetInstanceID());
+            if (collision.gameObject.GetComponent<WriteTool>() != null) gameObject.GetComponent<PhotonView>().RPC("EndStroke", RpcTarget.AllBufferedViaServer, collision.gameObject.GetInstanceID());
         }
 
         /// <summary>
