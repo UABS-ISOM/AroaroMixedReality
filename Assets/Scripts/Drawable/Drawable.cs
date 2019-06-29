@@ -25,7 +25,7 @@
         /// Defines the texture
         /// </summary>
         private Texture2D texture;
-
+        private PhotonView photonView;
         /// <summary>
         /// Defines the previousPositions
         /// </summary>
@@ -72,6 +72,11 @@
         public void EndStroke(int penId)
         {
             previousPositions.Remove(penId);
+        }
+
+        private void Awake()
+        {
+            photonView = gameObject.GetComponent<PhotonView>();
         }
 
         /// <summary>
