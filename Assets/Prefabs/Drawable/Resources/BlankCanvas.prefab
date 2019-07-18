@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1132770333590449378}
   - component: {fileID: 1365493737}
   - component: {fileID: 1365493738}
+  - component: {fileID: 221981397}
   m_Layer: 0
   m_Name: BlankCanvas
   m_TagString: Untagged
@@ -101,7 +102,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hostTransform: {fileID: 0}
   manipulationType: 2
-  twoHandedManipulationType: 5
+  twoHandedManipulationType: 3
   allowFarManipulation: 1
   oneHandRotationModeNear: 0
   oneHandRotationModeFar: 0
@@ -112,12 +113,34 @@ MonoBehaviour:
   smoothingAmountOneHandManip: 0.001
   OnManipulationStarted:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: IsInteractedOn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: Microsoft.MixedReality.Toolkit.UI.ManipulationEvent, Microsoft.MixedReality.Toolkit.SDK,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   OnManipulationEnded:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: NotInteractedOn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: Microsoft.MixedReality.Toolkit.UI.ManipulationEvent, Microsoft.MixedReality.Toolkit.SDK,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   OnHoverEntered:
@@ -130,6 +153,19 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: Microsoft.MixedReality.Toolkit.UI.ManipulationEvent, Microsoft.MixedReality.Toolkit.SDK,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &221981397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8876351339322303771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb745dcc68b643e4aae36f7757934669, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isControllable: 1
 --- !u!1 &8876351339851668486
 GameObject:
   m_ObjectHideFlags: 0
@@ -144,6 +180,8 @@ GameObject:
   - component: {fileID: 8876351339851668489}
   - component: {fileID: 8876351339851668492}
   - component: {fileID: 8876351339851668493}
+  - component: {fileID: 81738683}
+  - component: {fileID: 8092474408433384472}
   m_Layer: 0
   m_Name: Front
   m_TagString: Untagged
@@ -217,7 +255,7 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8876351339851668486}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 64cc8cf7cd0407f4d95ed3c623cf2c7a, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -239,10 +277,10 @@ MonoBehaviour:
   ObservedComponentsFoldoutOpen: 1
   Group: 0
   prefixField: -1
-  Synchronization: 0
+  Synchronization: 3
   OwnershipTransfer: 0
   ObservedComponents:
-  - {fileID: 0}
+  - {fileID: 8092474408433384472}
   viewIdField: 0
   InstantiationId: 1
   isRuntimeInstantiated: 0
@@ -258,6 +296,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7a0cb018a7068743b1eb27831c4a2fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &81738683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8876351339851668486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+--- !u!114 &8092474408433384472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8876351339851668486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
 --- !u!1 &8876351339858942768
 GameObject:
   m_ObjectHideFlags: 0

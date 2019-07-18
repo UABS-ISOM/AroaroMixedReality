@@ -41,6 +41,8 @@
         /// <param name="g">The g<see cref="byte"/></param>
         /// <param name="b">The b<see cref="byte"/></param>
         /// <param name="a">The a<see cref="byte"/></param>
+
+
         [PunRPC]
         public void Draw(int penId, Vector2 position, int penSize, byte r, byte g, byte b, byte a)
         {

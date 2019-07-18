@@ -39,8 +39,7 @@
         {
             if (photonView != null)
             {
-                photonView.TransferOwnership(0);
-
+                photonView.TransferOwnership(0); //transfer ownership back to scene
             }
                 
         }

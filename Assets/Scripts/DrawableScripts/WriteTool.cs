@@ -1,17 +1,13 @@
 ﻿namespace AroaroMixedReality
 {
-
-    using System.Collections;
-    using System.Collections.Generic;
     using UnityEngine;
     using Photon.Pun;
+    using System.Collections;
+    using System.Collections.Generic;
     using System;
     
-    using Microsoft.MixedReality.Toolkit.Utilities.Solvers;
-
     public class WriteTool : MonoBehaviour
     {
-
         [SerializeField]
         private Color paintColor;
 
@@ -31,7 +27,6 @@
             set
             {
                 isHeld = value;
-
             }
         }
 
@@ -107,14 +102,14 @@
             {
                 if (previousTouchingCanvas != null)
                 {
-                    Debug.Log("previous Touchign Canvas");
+                    Debug.Log("previous Touching Canvas");
                     PhotonView.Get(previousTouchingCanvas).RPC(nameof(previousTouchingCanvas.EndStroke), RpcTarget.AllBufferedViaServer, gameObject.GetInstanceID());
                     previousTouchingCanvas = null;
                 }
             }
         }
 
-
+        // used to change state of pen (whether it is being used or not)
         public void PenHeldManipulatedStart()
         {
             Debug.Log("penheld");
@@ -127,6 +122,7 @@
             Debug.Log("pendroppped");
         }
 
+        // method used to quickly check what state the pen is in without modifying it
         public bool InUse()
         {
             return IsHeld;
