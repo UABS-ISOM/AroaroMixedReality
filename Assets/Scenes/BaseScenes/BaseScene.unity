@@ -471,6 +471,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   avatar: {fileID: 6942227851286277843, guid: 63c8aa62f83ecbf46a90ddc5e66e1b99, type: 3}
+  cameraToFollow: {fileID: 580132033}
 --- !u!1 &1335093466
 GameObject:
   m_ObjectHideFlags: 0
